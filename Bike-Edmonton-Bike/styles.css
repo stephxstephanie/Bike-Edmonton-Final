@@ -1,0 +1,812 @@
+/* Buy Bike */
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+#top-nav ul {
+    padding: 0;
+
+}
+
+#top-nav li {
+    list-style-type: none;
+    margin-right: 24px;
+    padding-bottom: 4px;
+    display: inline;
+}
+
+
+/*Layout*/
+
+.margin-default {
+    margin: 0 80px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav-bg {
+	background-color: #04387C;
+	width: 100%;
+	height: 100px;
+	padding: 0 80px;
+}
+
+
+/*navigation*/
+
+.nav-font {
+	size: 80px;
+	font-family: Raleway;
+	font-weight: bold;
+	color: white;
+}
+
+
+.nav-gap {
+	display: flex;
+	gap: 90px;
+}
+
+
+.search-button {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 23px;
+  width: 251px;
+  height: 40px;
+  border-radius: 20px;
+  background: white;
+}
+
+
+
+
+/* WELCOME SECTION */
+
+
+.bike-hero {
+	width: 100%;
+	display: flex;
+	position: relative;
+	align-items: center;
+   }
+
+   .bike-image{
+   		width: 100%;
+   }
+
+   .bike-content {
+	   	display: flex;
+	   	flex-direction: column;
+	   	gap: 16px;
+	   	position: absolute;
+	   	width: 1200px;
+	   	padding: 0 80px ;
+	   }
+
+   .bike-content-text {
+   	   	font-family: Raleway;
+   		font-size: 45px;
+   	   	color: white;
+   	   	line-height: 1.25;
+   	   	font-weight: bold;
+   }
+
+   .bike-hero::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 61, 141, 0.77);
+   }
+
+
+.white-button {
+	border-radius: 50px;
+	border: 3px solid #FFF;
+	background-color: transparent;
+	display: flex;
+	width: 230px;
+	height: 55px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	color: white;
+	font-family: Raleway;
+	font-weight: bold;
+}
+
+
+.divider {
+	display: flex;
+	direction: row;
+	background-color: #04387C;;
+	width: 100%;
+	height: 80px;
+	margin-top: 120px;
+
+}
+
+
+/* sub-navigation */
+
+
+.small-nav-layout {
+list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 80px 50px 122px;
+
+}
+
+.small-nav {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	text-decoration: none;
+}
+
+.small-nav-clicked {
+	border-radius: 8px;
+	background: #04387C; 
+	display: flex;
+	width: 100%px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: white;
+	font-family: Raleway;
+	font-size: 24px;
+	padding: 0px 30px 0px 30px;
+}
+
+.small-nav-gray {
+	border-radius: 8px;
+	background: transparent;
+	border-color: #B8B8B8;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: #B8B8B8;
+	font-family: Raleway;
+	font-size: 24px;
+	padding: 0px 30px 0px 30px;
+}
+
+
+
+/* Info Section */
+
+.info-layout {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+
+.icon-space {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 22px;
+
+}
+
+
+.sort-box {
+border-radius: 3px;
+border: none;
+background: #D9D9D9;;
+width: 354px;
+height: 50px;
+align-self: center;
+}
+
+.info-text-style {
+color: #000;
+
+font-family: Aileron;
+font-size: 24px;
+font-style: normal;
+font-weight: 400px;
+line-height: 26px;
+}
+
+
+.sort-text-style {
+color: #000;
+font-family: Aileron;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+padding: 10px;
+}
+
+
+.arrow {
+	display: flex;
+	align-items: center;
+	padding: 0px 10px 0px 0px;
+	justify-content: space-between;
+
+}
+
+
+/* Bike Section */
+
+
+.bike-grid {
+	display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    column-gap: 46px;
+    align-items: flex-start;
+    margin-top: 38px;
+    row-gap: 60px;
+}
+
+
+.bike-items {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+
+.bike-title {
+	color: #000;
+	font-family: Raleway;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+		margin: 0px;
+}
+
+.bike-price {
+	color: #04387C;
+	font-family: Aileron;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 0px;
+
+}
+
+
+.divider-2 {
+	display: flex;
+	direction: row;
+	background-color: #04387C;;
+	width: 100%;
+	height: 80px;
+
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.sect-dark-footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+
+}
+
+.footer-2-wrap {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    column-gap: 46px;
+    align-items: flex-start;
+}
+
+.footer-left {
+    grid-column: 1 / span 6;
+    align-content: space-between;
+
+}
+
+
+.footer-right {
+    grid-column: 8 / span 5;
+}
+
+.footer-title {
+	color: #B8B8B8;
+	font-family: Raleway;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+
+.footer-body {
+	color: #B8B8B8;
+	font-family: Raleway;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.form-label {
+   color: #B8B8B8;
+	font-family: Raleway;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    
+}
+
+.form-button {
+    border-radius: 50px;
+	border: 3px solid #003D8D;
+	display: flex;
+	width: 194px;
+	height: 45px;
+	padding: 9px 28px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: #003D8D;
+	background-color: transparent;
+}
+
+.message-field {
+    display: block;
+    width: 100%;
+    height: 121px;
+    border-style: none;
+    margin-bottom: 52px;
+}
+
+.social-style {
+	list-style: none;
+	display: flex;
+	column-gap: 60px;
+	padding: 0px 0px 0px 0px; 
+}
+
+.social-column {
+	display: flex;
+	flex-direction: column;s
+	align-items: center;
+	gap: 24px;
+	text-decoration: none;
+}
+
+
+.footer-1-wrap {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    column-gap: 46px;
+
+}
+
+.follow-padding {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.blue-box {
+padding: 0 20px;
+display: flex;
+	border-radius: 3px;
+	background: #04387C;
+	align-items: center;
+}
+
+.form-wrap {
+	display: flex;
+	margin-bottom: 20px;
+
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+
+
+/* -----MEDIA QUERIES----- */ 
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 480px) {
+
+
+/* Navigation */
+
+.hidden-mobile {
+    display: none;
+ }
+
+.hidden-desktop {
+    display: flex;
+}
+
+.margin-default {
+    margin: 0 40px;
+}
+
+.flex-center {
+    flex-direction: row;
+}
+
+.nav-bg {
+	padding: 40px;
+}
+
+.bike-image {
+	height: 400px;
+	object-fit: cover;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template: auto / 1fr;
+    column-gap: 104px;
+}
+
+.divider {
+	height: 40px;
+}
+
+.is-hidden {
+    display: none;
+ }
+
+
+
+/* Welcome Section */
+
+
+.bike-content {
+	   	display: flex;
+	   	flex-direction: column;
+	   	gap: 10px;
+	   	position: absolute;
+	   	width: 100%;
+	   	padding: 0 150px 0px 42px;
+	   }
+
+
+ .bike-content-text {
+ 	font-size: 20px;
+ 	padding-right: 0px;
+ 	line-height: 1.8;
+ }
+
+
+.white-button {
+	display: flex;
+	width: 250px;
+	height: 45px;
+	padding: 9px 28px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: #FFF;
+	text-align: center;
+	font-family: Raleway;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px
+}
+
+h2 {
+	color: #000;
+	font-family: "Balance Groovy";
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+.h2-sub {
+	font-size: 16px;
+}
+
+.divider-2 {
+	display: flex;
+	direction: row;
+	background-color: #04387C;;
+	width: 100%;
+	height: 80px;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+/* small nav */
+
+.new-nav {
+	display: flex;
+	margin: 0;
+	width: 400px;
+	height: 46px;
+	justify-content: left;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 2px;
+	border: 1.5px solid #04387C;
+	background: #04387C;
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	padding-left: 20px;
+ }
+
+
+/* Info Section */
+
+.info-layout {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 36px;
+
+}
+
+
+.icon-space {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 22px;
+
+}
+
+
+.plus {
+	display: flex;
+	align-items: center;
+	padding: 0px 20px 0px 20px;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+
+.sort-box {
+border-radius: 3px;
+border: none;
+background: #D9D9D9;;
+align-self: center;
+width: 188px;
+height: 35px;
+}
+
+.info-text-style {
+color: #000;
+
+font-family: Aileron;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+}
+
+
+.sort-text-style {
+color: #000;
+font-family: Aileron;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+padding: 10px;
+}
+
+
+.arrow {
+	display: flex;
+	align-items: center;
+	padding: 0px 10px 0px 0px;
+	justify-content: space-between;
+
+}
+
+
+/* Bike Section */
+
+
+.bike-grid {
+	display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    column-gap: 22px;
+    align-items: flex-start;
+    margin-top: 38px;
+    row-gap: 30px;
+}
+
+
+.bike-items {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+
+.bike-title {
+	color: #000;
+	font-family: Raleway;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+		margin: 0px;
+}
+
+.bike-price {
+	color: #04387C;
+	font-family: Aileron;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 28px;
+	margin: 0px;
+
+}
+
+.resize {
+  width: 189px;
+  height: 112px;
+
+}
+
+.gary {
+	font-size: 14px;
+	color: #000;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+		margin: 0px;
+}
+
+.divider {
+	margin-top: 100px;
+}
+
+
+/* footer */
+
+
+.footer-title {
+    color: #B8B8B8;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+
+.footer-body {
+    color: #B8B8B8;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.follow-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.sect-dark-footer {
+    padding: 30px 24px 80px;
+}
+
+
+.footer-1-wrap {
+	grid-template: max-content max-content / 1fr;
+}
+
+.footer-left {
+	grid-area: 1/1;
+}
+
+.footer-right {
+	grid-column: 1/1;
+}
+
+.footer-body2 {
+	    color: #B8B8B8;
+        font-family: Raleway;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
