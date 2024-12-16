@@ -1,0 +1,827 @@
+/* Home Bike Edmonton*/
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*Layout*/
+
+.margin-default {
+    margin: 0 80px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bg {
+  background-color: #04387C;
+  width: 100%;
+  height: 100px;
+  padding: 0 80px;
+}
+
+/* Header */
+
+#top-nav {
+  gap: 120px;
+}
+
+#top-nav ul {
+    padding: 0;
+
+}
+
+#top-nav li {
+    list-style-type: none;
+    margin-right: 24px;
+    padding-bottom: 4px;
+    display: inline;
+}
+
+
+
+/*navigation*/
+
+.nav-font {
+  size: 80px;
+  font-family: Raleway;
+  font-weight: bold;
+  color: white;
+
+}
+
+
+.nav-gap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 23px;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  background: white;
+}
+
+.search-icon {
+
+}
+
+
+/* sub-navigation */
+
+
+.small-nav-layout {
+list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+}
+
+.small-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-decoration: none;
+}
+
+.small-nav-clicked {
+  border-radius: 8px;
+  background: #04387C; 
+  display: flex;
+  width: 100%px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: Raleway;
+  font-size: 24px;
+  padding: 0px 30px 0px 30px;
+}
+
+.small-nav-gray {
+  border-radius: 8px;
+  background: transparent;
+  border-color: #B8B8B8;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #B8B8B8;
+  font-family: Raleway;
+  font-size: 24px;
+  padding: 0px 30px 0px 30px;
+}
+
+
+/* WELCOME SECTION */
+
+ .bike-hero {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+   }
+
+   .bike-image{
+      width: 100%;
+   }
+
+   .bike-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: absolute;
+      width: 100%;
+      padding: 0 80px ;
+
+     }
+
+   .bike-content-text {
+      font-family: Raleway;
+      font-weight: bold;
+      font-size: 45px;
+      color: white;
+      line-height: 1.25;
+      margin: 0px;
+
+   }
+
+   .header-sub {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+   margin: 0px;
+   padding-right: 150px;
+   }
+
+
+   .bike-hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 61, 141, 0.77);
+   }
+
+
+.white-button {
+  border-radius: 50px;
+  border: 3px solid #FFF;
+  background-color: transparent;
+  display: flex;
+  width: 230px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: white;
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+
+.divider {
+  display: flex;
+  direction: row;
+  background-color: #04387C;;
+  width: 100%;
+  height: 80px;
+  margin-top: 150px;
+}
+
+
+/* OUR MISSION */
+
+h2 {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 0;
+
+
+
+}
+
+.h2-sub {
+  font-family: Raleway;
+  font-size: 32px;
+  margin-top: 0;
+  line-height: 50px;
+
+}
+
+
+.margin-default {
+  margin: 80px;
+}
+
+.services-layout {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding: 0 80px 0px 80px; /* top right bottom left */
+}
+
+.services-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  font-family: Raleway;
+  color: #04387C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  width: 230px;
+  border: solid 20px #003D8D;
+  border-radius: 200px;
+}
+
+.big-blue {
+  color: #04387C;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px
+}
+
+
+/* VISION STATEMENT */
+
+
+.vision-hero {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   }
+
+   .vision-image{
+      width: 100%;
+   }
+
+   .vision-content {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      position: absolute;
+      padding: 0 80px ;
+     }
+
+   .vision-content-text {
+        color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px
+
+   }
+
+   .vision-hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 61, 141, 0.77);
+   }
+
+
+
+/* OBJECTIVES */
+
+
+.obj-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+
+}
+
+.obj-layout {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.obj-box {
+  background: #D9D9D9;
+  width: 100%;
+  height: 210px;
+  padding-right: 60px;
+  padding-left: 66px;
+  padding-top: 25px;
+
+}
+
+.obj-text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+
+}
+
+.divider-2 {
+  display: flex;
+  direction: row;
+  background-color: #04387C;;
+  width: 100%;
+  height: 80px;
+ 
+}
+
+
+
+/* FOOTER */
+
+.sect-dark-footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+
+}
+
+.footer-2-wrap {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    column-gap: 46px;
+    align-items: flex-start;
+}
+
+.footer-left {
+    grid-column: 1 / span 6;
+    align-content: space-between;
+
+}
+
+
+.footer-right {
+    grid-column: 8 / span 5;
+}
+
+.footer-title {
+  color: #B8B8B8;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+
+.footer-body {
+  color: #B8B8B8;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.form-label {
+   color: #B8B8B8;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    
+}
+
+.form-button {
+    border-radius: 50px;
+  border: 3px solid #003D8D;
+  display: flex;
+  width: 194px;
+  height: 45px;
+  padding: 9px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #003D8D;
+  background-color: transparent;
+}
+
+.message-field {
+    display: block;
+    width: 100%;
+    height: 121px;
+    border-style: none;
+    margin-bottom: 52px;
+}
+
+.social-style {
+  list-style: none;
+  display: flex;
+  column-gap: 60px;
+  padding: 0px 0px 0px 0px; 
+}
+
+.social-column {
+  display: flex;
+  flex-direction: column;s
+  align-items: center;
+  gap: 24px;
+  text-decoration: none;
+}
+
+
+.footer-1-wrap {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    column-gap: 46px;
+
+}
+
+.follow-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.blue-box {
+padding: 0 20px;
+display: flex;
+  border-radius: 3px;
+  background: #04387C;
+  align-items: center;
+}
+
+.form-wrap {
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+
+
+/* -----MEDIA QUERIES----- */ 
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 480px) {
+
+
+/* Navigation */
+
+.hidden-mobile {
+    display: none;
+ }
+
+.hidden-desktop {
+    display: flex;
+}
+
+.margin-default {
+    margin: 0 40px;
+}
+
+.flex-center {
+    flex-direction: row;
+}
+
+.nav-bg {
+  padding: 40px;
+}
+
+.bike-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template: auto / 1fr;
+  column-gap: 104px;
+}
+
+.divider {
+  height: 40px;
+}
+
+.is-hidden {
+    display: none;
+ }
+
+
+ /* WELCOME SECTION */
+
+ .bike-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: absolute;
+    width: 100%;
+    padding: 0 0px 0px 42px;
+     }
+
+.bike-content-text {
+  font-size: 28px;
+  padding-right: 0px;
+  line-height: 1.8;
+  margin: 0;
+
+}
+
+.header-sub {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 20px;
+  margin: 0;
+}
+
+
+/* small nav */
+
+.new-nav {
+  display: flex;
+  margin-top: 50px;
+  width: 400px;
+  height: 46px;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1.5px solid #04387C;
+  background: #04387C;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  padding-left: 20px;
+ }
+
+
+.plus {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+}
+
+
+/* Our Mission */
+
+h2 {
+  color: #000;
+  font-family: "Balance Groovy";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.h2-sub {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  border: solid 10px #003D8D;
+  border-radius: 200px;
+}
+
+.services-layout {
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 15px;
+  padding: 20px 40px 20px 40px;
+}
+
+
+.lil-blue {
+font-size: 15px;
+text-align: center;
+
+}
+
+.small-safe {
+  width: 48px;
+  height: 48px;
+}
+
+.small-map {
+  width: 61px;
+  height: 61px;
+}
+
+.small-ppl {
+  width: 57px;
+  height: 46px;
+}
+
+
+.services-link {
+  gap: 0px;
+  
+}
+
+/* Vision */
+.vision-content-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+/* Objectives */
+.obj-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 30px;
+
+}
+
+.obj-layout {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.obj-box {
+  background: #D9D9D9;
+  width: 400px;
+  height: 135px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.obj-text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+}
+
+
+
+.divider {
+  margin-top: 60px;
+}
+
+.divider-2 {
+  height: 40px;
+  margin-top: 0;
+}
+
+
+/* footer */
+
+
+.footer-title {
+    color: #B8B8B8;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+
+.footer-body {
+    color: #B8B8B8;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.follow-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.sect-dark-footer {
+    padding: 30px 24px 80px;
+}
+
+
+.footer-1-wrap {
+  grid-template: max-content max-content / 1fr;
+}
+
+.footer-left {
+  grid-area: 1/1;
+}
+
+.footer-right {
+  grid-column: 1/1;
+}
+
+.footer-body2 {
+  color: #B8B8B8;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+.form-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 63px;
+  height: 42px;
+  border-radius: 3px;
+  background: #04387C;
+
+}
+
+
+
+
+
+
